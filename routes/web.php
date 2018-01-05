@@ -11,12 +11,12 @@
 |
 */
 
-Route::get('/', ['as' => 'inicio', function (){return view('inicio');}]);
+Route::get('/', ['as' => 'inicio', 'uses' => 'PagesController@inicio']);
 
-Route::get('planificar', ['as' => 'planificar', function(){return view('planificar');}]);
+Route::get('planificar', ['as' => 'planificar', 'uses' => 'PagesController@planificar']);
 
-Route::get('historial', ['as' => 'historial', function(){return view('historial');}]);
+Route::get('historial', ['as' => 'historial', 'uses' => 'PagesController@historial']);
 
-Route::get('log-acceso', ['as' => 'log-acceso', function(){return view('logAcceso');}]);
+Route::get('log-acceso', ['as' => 'log-acceso', 'uses' => 'PagesController@logAcceso']);
 
-Route::get('gestionar-usuarios', ['as' => 'gestionar-usuarios', function(){return view('gestionar-usuarios');}]);
+Route::get('gestionar-usuarios', ['as' => 'gestionar-usuarios', 'uses' => 'PagesController@gestionarUsuarios']);
